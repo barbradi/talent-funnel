@@ -1,0 +1,5 @@
+- added MDC context through MDCFilter and , these kind of keys are very helpful when monitoring in datadog
+- move to gradle / kotlin I'd say it's more readable
+- integration tests for all methods in the controller including error scenarios
+- slice webmvc tests for all methods in the controller
+- skipped service and repository testing, it's easy
