@@ -1,4 +1,4 @@
-package co.uk.e4s.technical.test.controllers
+package co.uk.e4s.technical.test.model.responses
 
 import org.springframework.http.HttpStatus
 

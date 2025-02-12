@@ -1,6 +1,7 @@
 package co.uk.e4s.technical.test.controllers
 
 import co.uk.e4s.technical.test.exceptions.ApplicationNotFoundException
+import co.uk.e4s.technical.test.model.responses.ApiError
 import mu.KotlinLogging
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
