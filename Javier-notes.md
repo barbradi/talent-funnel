@@ -4,6 +4,7 @@
 - integration tests for all methods in the controller including error scenarios
 - slice webmvc tests for all methods in the controller
 - skipped service and repository testing, it's easy
+- skipped rate limiter, I'd need to investigate this further pretty sure spring supports it, probably something similar to circuit breaker
 
 ## Run the application
 ./gradlew bootRun
