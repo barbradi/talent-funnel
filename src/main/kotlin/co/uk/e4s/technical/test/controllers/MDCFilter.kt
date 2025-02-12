@@ -20,7 +20,6 @@ class MDCFilter : OncePerRequestFilter() {
             "userAgent" to request.getHeader("User-Agent"),
             "ipAddress" to request.getHeader("X-Forwarded-For")
         ) {
-            log.info { "request filter " + request.getHeader("User-Agent")}
             filterChain.doFilter(request, response)
         }
     }
