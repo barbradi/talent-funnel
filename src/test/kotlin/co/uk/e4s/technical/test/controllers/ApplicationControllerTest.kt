@@ -196,7 +196,7 @@ class ApplicationControllerTest  @Autowired constructor(
             .accept(MediaType.APPLICATION_JSON)
             .body(BodyInserters.fromValue(updateStatusRequest))
             .exchange()
-            .expectStatus().isCreated
+            .expectStatus().isOk
             .expectBody(String::class.java)
             .returnResult()
             .responseBody

@@ -57,7 +57,7 @@ class ApplicationController(
     }
 
     @PatchMapping("/{id}/status")
-    @ResponseStatus(code = HttpStatus.CREATED)
+    @ResponseStatus(code = HttpStatus.OK)
     fun updateStatus(
         @PathVariable id: String,
         @Valid @RequestBody updateStatusRequest: UpdateStatusRequest

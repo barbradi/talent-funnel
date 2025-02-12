@@ -181,7 +181,7 @@ class ApplicationIntegrationTest @Autowired constructor(
 			.accept(MediaType.APPLICATION_JSON)
 			.body(BodyInserters.fromValue(updateStatusRequest))
 			.exchange()
-			.expectStatus().isCreated
+			.expectStatus().isOk
 			.expectBody(ApplicationInfoResponse::class.java)
 			.returnResult()
 			.responseBody!!
