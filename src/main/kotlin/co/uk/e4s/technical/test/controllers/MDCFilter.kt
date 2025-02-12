@@ -23,8 +23,4 @@ class MDCFilter : OncePerRequestFilter() {
             filterChain.doFilter(request, response)
         }
     }
-
-    companion object {
-        val log = KotlinLogging.logger { }
-    }
 }
